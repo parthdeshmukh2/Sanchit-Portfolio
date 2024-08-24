@@ -4,12 +4,16 @@ import Footer from '../components/Footer'
 import About from '../components/About'
 import Testimonials from '../components/Testimonials'
 import Blogs from '../components/Blogs'
+import Carousel from '../components/Above'
 
 
 const LandingPage = () => {
   return (
     <>
     <Navbar/>
+    <div>
+      <Carousel/>
+    </div>
     <div id="about">
         <About />
       </div>
