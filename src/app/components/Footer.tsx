@@ -2,21 +2,16 @@ import React from 'react'
 import {colors} from "../utils/colors"
 
 const Footer = () => {
-   console.log(colors, "colors")
   return (
-    <footer className={`bg-${colors.PRIMARY_BACKGROUND_COLOR} text-white py-8`}>
-    <div className="container mx-auto px-4">
-      <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-        {/* Left: Contact Information */}
-        <div className="text-center md:text-left">
+    <footer className={`bg-primaryBackground text-white py-8`}>
+    <div style={{border:'1px solid red'}} className="container mx-auto px-4 text-center">
         <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2">Contact Us</h3>
+          <p className="text-sm md:text-base">Phone:+91 8600181102</p>
+          <p className="text-sm md:text-base">Email: sanchit@gmail.com</p>
+      
+    <div className='mx-auto text-center flex flex-row justify-center my-4'>
 
-          <p className="text-sm md:text-base">Phone: <a href="tel:+11234567890" className="text-blue-400 hover:underline">(+1) 123-456-7890</a></p>
-          <p className="text-sm md:text-base">Email: <a href="mailto:contact@yourclinic.com" className="text-blue-400 hover:underline">contact@yourclinic.com</a></p>
-        </div>
-
-        {/* Middle: Social Media Links */}
-        <div  className="flex justify-center space-x-6 ">
+  
           <a href="https://facebook.com" className="text-white hover:text-gray-400" aria-label="Facebook">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12.07c0-5.522-4.478-10-10-10s-10 4.478-10 10c0 4.991 3.657 9.128 8.438 9.877v-6.988h-2.54v-2.726h2.54v-2.083c0-2.506 1.492-3.89 3.775-3.89 1.094 0 2.238.195 2.238.195v2.463h-1.26c-1.242 0-1.629.772-1.629 1.562v1.854h2.773l-.443 2.726h-2.33v6.988c4.781-.749 8.438-4.886 8.438-9.877z" />
@@ -32,20 +27,17 @@ const Footer = () => {
               <path d="M7.75 2h8.5c3.037 0 5.25 2.213 5.25 5.25v8.5c0 3.037-2.213 5.25-5.25 5.25h-8.5c-3.037 0-5.25-2.213-5.25-5.25v-8.5c0-3.037 2.213-5.25 5.25-5.25zm5.25 12c2.071 0 3.75-1.679 3.75-3.75s-1.679-3.75-3.75-3.75-3.75 1.679-3.75 3.75 1.679 3.75 3.75 3.75zm0-9.25c3.038 0 5.25 2.212 5.25 5.25s-2.212 5.25-5.25 5.25-5.25-2.212-5.25-5.25 2.212-5.25 5.25-5.25zm6.25-1.5c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75z" />
             </svg>
           </a>
-        </div>
+          </div>
 
-        {/* Right: Address */}
-        <div className="text-center md:text-right">
           <h3 className="text-lg md:text-xl font-bold mb-2">Visit Us</h3>
-          <p className="text-sm md:text-base">123 Health St</p>
-          <p className="text-sm md:text-base">Wellness City, State</p>
-          <p className="text-sm md:text-base">12345</p>
-        </div>
-      </div>
-      <div className="text-center mt-6">
-        <p className="text-gray-400 text-xs md:text-sm">&copy; {new Date().getFullYear()} Your Clinic Name. All rights reserved.</p>
-      </div>
+          <p className="text-sm md:text-base">Bhilai</p>
+          <p className="text-sm md:text-base">Chattisgarh</p>
+          <p className="text-sm md:text-base">Wardha</p>
+
     </div>
+      <div className="text-center mt-6">
+        <p className="text-white text-xs md:text-sm">&copy; {new Date().getFullYear()} Your Clinic Name. All rights reserved.</p>
+      </div>
   </footer>
   )
 }

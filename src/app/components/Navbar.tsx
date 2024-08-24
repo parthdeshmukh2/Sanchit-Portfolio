@@ -13,30 +13,31 @@ const Navbar = () => {
     };
   return (
     <div>
-       <nav className="bg-white shadow-lg">
+       <nav className="bg-primaryBackground shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
               <Image src={logo}
-      width={100}
-      height={100}
-      alt="Picture of the author" />
+                width={100}
+                height={100}
+                alt="Picture of the author" />
             </Link>
           </div>
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex">
-              <Link href="/">
-                <span className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Home</span>
+             
+              <Link  href="#about">
+                <span className="px-3 py-2 rounded-md text-sm  text-xl text-white hover:text-green-300">About</span>
               </Link>
-              <Link href="/about">
-                <span className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">About</span>
+              <Link href="#testimonials">
+                <span className="px-3 py-2 rounded-md text-sm text-xl text-white hover:text-green-300">Testimonials</span>
               </Link>
-              <Link href="/services">
-                <span className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Services</span>
+              <Link  href="#blogs">
+                <span className="px-3 py-2 rounded-md text-sm text-xl text-white hover:text-green-300">Blogs</span>
               </Link>
-              <Link href="/contact">
-                <span className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900">Contact</span>
+              <Link  href="#contact">
+                <span className="px-3 py-2 rounded-md text-sm text-xl text-white hover:text-green-300">Contact us</span>
               </Link>
             </div>
             <div className="flex md:hidden">
