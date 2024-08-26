@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import favicon from "./favicon.ico"
-
-const inter = Inter({ subsets: ["latin"] });
-
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
 export const metadata: Metadata = {
   title: "Dr. Sanchit Chopra",
   description: "",
@@ -20,10 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href='./favicon.ico' />
-        <title>{metadata?.title}</title> 
-        <meta name="description" content={metadata.description} />
+        {/* <title>{metadata?.title}</title>  */}
+      {/* //  <meta name="description" content={metadata.description} /> */}
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

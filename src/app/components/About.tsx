@@ -8,7 +8,7 @@ const About = () => {
                 <div className="w-full md:w-1/2 md:pr-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
                     <p className="text-lg text-gray-700 mb-6">
-                        I am Dr. Sanchit Chopra, an emerging practitioner deeply passionate about Homeopathic Medicine. Recently graduated with a Bachelor of Homeopathic Medicine and Surgery (B.H.M.S.), I am also proud to have completed a Post Graduation course from the National Academy of Homoeopathy India (P.G.N.A.H.I.). As I embark on my career journey, I am driven by a fervent dedication to holistic healthcare.
+                        I am Dr. Sanchit Chopra, an emerging practitioner deeply passionate about Homeopathic Medicine. Recently graduated with a Bachelor of Homeopathic Medicine and Surgery (B.H.M.S.), I am also proud to have completed Post Graduation National Academy of Homoeopathy India (P.G.N.A.H.I.). As I embark on my career journey, I am driven by a fervent dedication to holistic healthcare.
                     </p>
                     <p className="text-lg text-gray-700 mb-6">
                         My fascination with natural healing modalities ignited my pursuit of a career in homeopathy. The journey through my B.H.M.S. education, complemented by the advanced training at the National Academy of Homoeopathy, has been transformative. It has equipped me with both foundational knowledge and specialized expertise, instilling in me a profound respect for the principles of homeopathic practice.
