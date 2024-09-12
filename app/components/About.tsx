@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import profile from "../../utils/images/profile.jpeg"
 
 const About = () => {
     return (
@@ -20,7 +21,7 @@ const About = () => {
                 <div className="w-full md:w-1/2 mt-8 md:mt-0 relative">
                     <div className="relative overflow-hidden rounded-lg shadow-lg">
                         <Image
-                            src="https://media.istockphoto.com/id/1327024466/photo/portrait-of-male-doctor-in-white-coat-and-stethoscope-standing-in-clinic-hall.webp?b=1&s=612x612&w=0&k=20&c=90f-FdWCjl0CvaDG4D1tIlKPDomqSWEXyiVU3Dy42AI="
+                            src={profile}
                             alt="Doctor Image"
                             width={700}
                             height={900}
