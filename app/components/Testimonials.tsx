@@ -2,16 +2,12 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import testimonial1  from '../utils/images/Testimonials/testimonial1.jpg'
+import testimonial2  from '../utils/images/Testimonials/testimonial2.jpg'
+import testimonial3  from '../utils/images/Testimonials/testimonial3.jpg'
 
 const images = [
-  'https://media.istockphoto.com/id/1292015214/photo/portrait-female-doctor-stock-photo.webp?b=1&s=612x612&w=0&k=20&c=V04CGZ3T6Zs4UXuw8XmDSs_whtC8VPtdszOZULeRdK0=',
-  'https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.webp?b=1&s=612x612&w=0&k=20&c=pUEEkCssZKxtB-xn2YtkrKwFyR6OToucQyBK9e0ZnVc=',
-  'https://media.istockphoto.com/id/1292015214/photo/portrait-female-doctor-stock-photo.webp?b=1&s=612x612&w=0&k=20&c=V04CGZ3T6Zs4UXuw8XmDSs_whtC8VPtdszOZULeRdK0=',
-  'https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.webp?b=1&s=612x612&w=0&k=20&c=pUEEkCssZKxtB-xn2YtkrKwFyR6OToucQyBK9e0ZnVc=',
-  'https://media.istockphoto.com/id/1292015214/photo/portrait-female-doctor-stock-photo.webp?b=1&s=612x612&w=0&k=20&c=V04CGZ3T6Zs4UXuw8XmDSs_whtC8VPtdszOZULeRdK0=',
-  'https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.webp?b=1&s=612x612&w=0&k=20&c=pUEEkCssZKxtB-xn2YtkrKwFyR6OToucQyBK9e0ZnVc=',
-  'https://media.istockphoto.com/id/1200980392/photo/medical-concept-of-asian-beautiful-female-doctor-in-white-coat-with-stethoscope-waist-up.webp?b=1&s=612x612&w=0&k=20&c=XO54ySpDSrs35CPXsvuXw05j1e0aCNv9Hl33q1TwNN4=',
-  'https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.webp?b=1&s=612x612&w=0&k=20&c=pUEEkCssZKxtB-xn2YtkrKwFyR6OToucQyBK9e0ZnVc=',
+testimonial1, testimonial2, testimonial3
 ];
 
 const Testimonials = () => {
@@ -21,7 +17,7 @@ const Testimonials = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        setItemsPerSlide(4);
+        setItemsPerSlide(3);
       } else if (window.innerWidth >= 768) {
         setItemsPerSlide(2);
       } else {
@@ -68,7 +64,7 @@ const Testimonials = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 p-2 ${itemsPerSlide === 4 ? 'w-1/4' : itemsPerSlide === 2 ? 'w-1/2' : 'w-full'}`}
+                className={`flex-shrink-0 p-2 ${itemsPerSlide === 3 ? 'w-1/3' : itemsPerSlide === 2 ? 'w-1/2' : 'w-full'}`}
               >
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <Image
