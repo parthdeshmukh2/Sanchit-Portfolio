@@ -5,9 +5,13 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import testimonial1  from '../utils/images/Testimonials/testimonial1.jpg'
 import testimonial2  from '../utils/images/Testimonials/testimonial2.jpg'
 import testimonial3  from '../utils/images/Testimonials/testimonial3.jpg'
+import testimonial4  from '../utils/images/Testimonials/testimonial4.jpg'
+import testimonial5  from '../utils/images/Testimonials/testimonial5.jpg'
+import testimonial6  from '../utils/images/Testimonials/testimonial6.jpg'
+import testimonial7  from '../utils/images/Testimonials/testimonial7.jpg'
 
 const images = [
-testimonial1, testimonial2, testimonial3
+testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, testimonial7
 ];
 
 const Testimonials = () => {
