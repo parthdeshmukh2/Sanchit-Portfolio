@@ -16,12 +16,19 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center items-center space-x-6 mb-4">
-          <a href="https://instagram.com" className="text-white hover:text-gray-400">
-            <FaInstagram className="h-6 w-6" />
+          <a  href="https://web.whatsapp.com/send?phone=8668846071"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with me on WhatsApp"
+              className="text-white hover:text-gray-400">
+            <FaWhatsapp className="h-6 w-6" />
           </a>
 
-          <a href="https://whatsapp.com" className="text-white hover:text-gray-400">
-            <FaWhatsapp className="h-6 w-6" />
+          <a href="https://www.instagram.com/dr.sanchit_homoeopathy/" target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with me on Instagram"
+              className="text-white hover:text-gray-400">
+            <FaInstagram className="h-6 w-6" />
           </a>
 
           <a href="https://youtube.com" className="text-white hover:text-gray-400">
