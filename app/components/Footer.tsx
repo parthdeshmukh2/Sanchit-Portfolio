@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center items-center space-x-6 mb-4">
-          <a  href="https://web.whatsapp.com/send?phone=8668846071"
+          <a  href="https://web.whatsapp.com/send?phone=8600181102"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with me on WhatsApp"
